@@ -60,13 +60,13 @@ const Post = ({ post, user, comments }) => {
         overlayClassName="modal-overlay"
         closeTimeoutMS={200}
       >
-        <div className="relative p-4 mt">
+        <div className="relative p-4">
           <h2 className="text-xl font-bold mb-4 flex items-center">
             <FaRegCommentDots className="mr-2" />
             Comments
           </h2>
           <button
-            className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 focus:outline-none"
+            className="absolute bg-red-500 top-2 right-2 text-white rounded-md px-1 focus:outline-none"
             onClick={toggleModal}
           >
             Close
