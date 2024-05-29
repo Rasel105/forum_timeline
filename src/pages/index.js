@@ -6,6 +6,7 @@ import usePosts from "../lib/hooks/usePosts";
 import Post from "../components/Post";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function Home() {
   const { posts, users, comments, loading } = usePosts();
@@ -18,6 +19,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Forum Timeline</title>
+      </Head>
       <Header />
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold mt-16 mb-8 text-center">
